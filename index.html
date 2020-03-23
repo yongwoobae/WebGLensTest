@@ -1,36 +1,44 @@
 <!doctype html>
-<html>
+
+Google Lens 웹 호스팅 테스트
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.googleapis.com",
+  "@type": "ARArtifact",
   
-  <head>
-  </head>
- 
-  <body>
-    Google Lens 웹 호스팅 테스트
+  "arTarget": {
+  
+    "@type": "ARImageTarget",
+
+    "name" : "Jump Zoo",
+
+    "description": "Giant Cat",
+
+    "image": "https://yongchicken81.github.io/WebTest1/popup_img_newcon_01.png"
     
-    <script type="application/ld+json">
-  {
-    "@context": "https://schema.googleapis.com/",
-    "@type": "ARArtifact",
-    "arTarget": {
-      "@type": "ARImageTarget",
-      "name" : "TARGET_TITLE",
-      "description" : "TARGET_DESCRIPTION",
-      "image": "https://lens-content.firebaseapp.com/helloworld/image/hw_targetimage.png"
     },
 
-    "arContent": {
-      "@type": "WebPage",
-      "name": "HEADLINE",
-      "image": "https://lens-content.firebaseapp.com/helloworld/image/thumbnail_image.png",
-      "url": "https://lens-content.firebaseapp.com/helloworld/index.html",
-      "publisher": {
-        "@type": "Organization",
-        "name": "PUBLISHER",
-        "logo": "https://lens-content.firebaseapp.com/helloworld/image/publisher_icon.png"
-      }
-    }
-  }
-</script>
+  "arContent": {
+
+    "@type": "WebPage",
+
+    "name": "Jump Zoo",
+
+    "image": "https://yongchicken81.github.io/WebTest1/ar_stamp_event.png",
+
+    "url": "https://www.sktelecom5gx.com/html/service/jumpar.html",
+
+    "publisher": {
     
-  </body>
+      "@type": "Organization",
+
+      "name": "SK Telecom",
+
+      // Add an absolute link to the publisher logo.
+      "logo": "https://yongchicken81.github.io/WebTest1/SKT_400x400.png"
+      }
+    },
+ }
   
+</script>
