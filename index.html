@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<title>
+  Google Lens Test용 Webpage 입니다
+</title>
+
+<head>
+
+  <!--Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MHKHS9V');
+  </script>
+  <!-- End Google Tag Manager -->
+
+
+  <script type="application/ld+json">
+    {
+
+      "@context": "https://schema.googleapis.com/",
+
+      "@type": "ARArtifact",
+
+      "arTarget": {
+
+        "@type": "ARImageTarget",
+// 구글렌즈 검색 레퍼런스 이미지
+        "name" : "Test Target",
+// 레퍼런스 이미지의 표시 이름
+        "description" : "Test용 Image Target입니다",
+// 레퍼런스 이미지의 URL
+        "image": "https://yongwoobae.github.io/WebGLensTest/popup_img_newcon_01.png"
+      },
+
+// 비디오 콘텐츠 사용시 추가
+//      "arPlacement": {
+
+//        "@type": "ARPlanarReplacement",
+
+//        "scaleMode": "ScaleModeFill"
+//      },
+// Contry whitelisting
+//        "arAccessSpecification": {
+
+//          "@type": "ARAccessSpecification",
+
+//          "eligibleRegion": [
+//            {
+// For each country, add values for eligibleRegion.@type and eligibleRegion.name.
+// The value of @type must be Country and the value of name must be the
+// Alpha 2 country code defined by ISO 3166-1 for that country.
+//            "@type": "Country",
+//            "name": "ISO 3166-2:KR"
+//          },
+//        ]
+//      },
+
+      "arContent": {
+
+        "@type": "Webpage",
+//        "@type": "VideoObject",
+// 결과 카드의 Title
+        "name": "Test Image",
+// 비디오 콘텐츠 URL
+//        "contentUrl": "https://lens-content.firebaseapp.com/helloworld/image/hw_livingsurface.mp4",
+// 결과 카드에 표시되는 이미지 URL
+        "image": "https://yongwoobae.github.io/WebGLensTest/ar_stamp_event.png",
+
+// 카드 Clink시 이동되는 Webpage URL
+        "url": "https://www.sktelecom5gx.com/html/service/jumpar.html",
+
+        "publisher": {
+
+          "@type": "Organization",
+// Publisher 이름
+          "name": "SK Telecom",
+// Publisher Logo 이미지 URL
+          "logo": "https://yongwoobae.github.io/WebGLensTest/SKT_400x400.png"
+        }
+      }
+    }
+  </script>
+
+</head>
+
+<body>
+</body>
+
+
+</body>
+</html>
