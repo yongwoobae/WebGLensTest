@@ -1,44 +1,105 @@
-<!doctype html>
+<!DOCTYPE html>
+<html amp lang="en">
+<head>
+  <meta charSet="utf-8">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <title>Google Lens AMP Sample</title>
 
-Google Lens 웹 호스팅 테스트
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.googleapis.com",
-  "@type": "ARArtifact",
-  
-  "arTarget": {
-  
-    "@type": "ARImageTarget",
-
-    "name" : "Jump Zoo",
-
-    "description": "Giant Cat",
-
-    "image": "https://yongchicken81.github.io/WebTest1/popup_img_newcon_01.png"
-    
-    },
-
-  "arContent": {
-
-    "@type": "WebPage",
-
-    "name": "Jump Zoo",
-
-    "image": "https://yongchicken81.github.io/WebTest1/ar_stamp_event.png",
-
-    "url": "https://www.sktelecom5gx.com/html/service/jumpar.html",
-
-    "publisher": {
-    
-      "@type": "Organization",
-
-      "name": "SK Telecom",
-
-      // Add an absolute link to the publisher logo.
-      "logo": "https://yongchicken81.github.io/WebTest1/SKT_400x400.png"
+  <meta name="viewport" content="width=device-width, minimum-scale=1, user-scalable=no">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.googleapis.com/",
+      "@type": "ARArtifact",
+      "arTarget": {
+        "@type": "ARImageTarget",
+        "name" : "TARGET_TITLE",
+        "description" : "TARGET_DESCRIPTION",
+        "image": "https://lens-content.firebaseapp.com/helloworld/image/hw_targetimage.png"
+      },
+      "arPlacement": {
+      "@type": "ARPlanarReplacement",
+      "scaleMode": "ScaleModeFill"
+      },
+      "arContent": {
+        "@type": "VideoObject",
+        "name": "HEADLINE",
+        "contentUrl": "https://lens-content.firebaseapp.com/helloworld/image/hw_livingsurface.mp4",
+        "image": "https://lens-content.firebaseapp.com/helloworld/image/thumbnail_image.png",
+        "url": "https://lens-content.firebaseapp.com/helloworld/index.html",
+        "publisher": {
+          "@type": "Organization",
+          "name": "PUBLISHER",
+          "logo": "https://lens-content.firebaseapp.com/helloworld/image/publisher_icon.png"
+        }
       }
-    },
- }
-  
-</script>
+    }
+  </script>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <style amp-boilerplate>body {-webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;-moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;-ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;animation: -amp-start 8s steps(1, end) 0s 1 normal both}  @-webkit-keyframes -amp-start { from {visibility: hidden} to {visibility: visible} } @-moz-keyframes -amp-start { from {visibility: hidden} to {visibility: visible} } @-ms-keyframes -amp-start { from {visibility: hidden} to {visibility: visible} } @-o-keyframes -amp-start { from {visibility: hidden} to {visibility: visible} } @keyframes -amp-start { from {visibility: hidden} to {visibility: visible} }</style><noscript><style amp-boilerplate>body {-webkit-animation: none;-moz-animation: none;-ms-animation: none;animation: none}</style></noscript>
+  <style amp-custom>
+    body {background: #f1f3f4;font-family: Roboto, sans-serif}
+
+    a, a:active, a:hover, a:link, a:visited {color: inherit;text-decoration: none}
+
+    h2 {font-family: Google Sans, sans-serif;font-size: 24px;line-height: 32px;margin: 24px 0 0;color: #202124}
+
+    .copy-01 {font-size: 16px}
+
+    .copy-01, .copy-02 {line-height: 24px;margin: 16px 0 0;color: #5f6368}
+
+    .copy-02 {font-size: 14px}
+
+    .footer {text-align: center}
+
+    .content-card {width: calc(100% - 48px);max-width: 550px;background: #fff;padding: 40px 24px 24px;margin: 24px auto;border: 1px solid #dadce0;border-radius: 8px;text-align: center;box-sizing: border-box}
+
+    .responsive-image {max-width: 335px;margin: 16px auto 0}
+  </style>
+</head>
+<body>
+
+<div>
+  <section class="content">
+    <div class="content-card">
+      <amp-img
+        class="simple-image"
+        src="./image/logo.png"
+        width="40"
+        height="40"
+        alt="Lens Logo">
+      </amp-img>
+      <h2>Hello!</h2>
+      <p class="copy-01">This is a demo page that demonstrates working AR Artifact markup. Replace the markup on the
+        page with your actual markup.
+      </p>
+      <amp-img
+        class="responsive-image"
+        src="./image/thumbnail_image.png"
+        width="355"
+        height="184"
+        layout="responsive"
+        alt="This is the image">
+      </amp-img>
+    </div>
+  </section>
+
+
+  <section class="footer copy-02">
+    <a
+      href="https://policies.google.com/terms"
+      target="_blank">
+      Terms
+    </a> |
+    <a
+      href="https://policies.google.com/privacy"
+      target="_blank">
+      Privacy
+    </a>
+  </section>
+</div>
+
+</body>
+</html>
